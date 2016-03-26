@@ -1,0 +1,266 @@
+/*reset start*/
+/*
+ * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+ * Richard Clark (http://richclarkdesign.com)
+ * http://cssreset.com
+ */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video
+ {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+/*reset end*/
+
+#wrap{
+    width: 100%;
+    height: 120%;
+}
+
+#headerBox{
+    width: 100%;
+    height: 50px;
+    background: #fc8365;
+    text-align: center;
+}
+
+#headerBox .h_logo{
+    width: 30%;
+    height: 100%;
+    line-height: 50px; /*줄간격*/
+    float: left;
+}
+
+
+#headerBox .h_logo a{
+    font-size: 20px;
+    color: #fff;
+}
+
+
+#headerBox .h_logo a:hover{ /*hover 마우스 올렸을때 색깔 */
+    color: #8ec430;
+}
+
+#headerBox .h_search{
+    width: 40%;
+    height: 50%;
+    line-height: 50px;
+    float: left;
+}
+
+
+#headerBox .h_nav ul{
+    width: 100%;
+    height: 100%;
+}
+
+#headerBox .h_nav ul li{
+    display: inline;
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+#headerBox .h_nav ul li:hover{
+    background-color: #bdbdbd;
+}
+
+#headerBox .h_nav ul li a{
+    color:#fff;
+}
+#headerBox .h_nav .h_subnav{
+    display: none;
+    width:150px;
+    height:100px;
+    background: #2a2a2a;
+    position:absolute;
+}
+
+#headerBox .h_nav .h_subnav li{
+    display: block;
+    float: none;
+    width:100%;
+    height: auto;
+    margin:0;
+}
+
+#headerBox .h_nav ul li.h_navBtn:hover .h_subnav{
+    display: block;
+}
+
+#headerBox .h_sns{
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+#headerBox .h_sns ul{
+    width: 100%;
+    height: 100%;
+}
+
+#headerBox .h_sns ul li{
+    display: inline;
+    margin: 0 10px 0 10px;
+}
+
+#headerBox .h_sns ul li img{
+    width: 50px;
+    height: 50px;
+}
+
+#contentBox{
+    width: 100%;
+    height:700px;
+}
+
+#contentBox .c_article{
+    width: 70%;
+    height:100%;
+    float: left;
+    background: #f1f1f1;
+    text-align: center;
+    line-height: 700px;
+    font-size: 20px;
+    color: #2a2a2a;
+}
+
+#contentBox .c_aside{
+    width: 30%;
+    height:100%;
+    float: left;
+    background: #fdd;
+    text-align: center;
+    line-height: 700px;
+    font-size: 20px;
+    color: #2a2a2a;
+}
+
+#footerBox{
+    width: 100%;
+    height:50px;
+    background:#2a2a2a;
+    text-align: center;
+}
+
+#footerBox .f_sns{
+    width: 30%;
+    height:100%;
+    float: left;
+}
+
+#footerBox .f_sns ul{
+    width: 100%;
+    height:100%;
+}
+
+#footerBox .f_sns ul li{
+    display: inline;
+    margin: 0 10px 0 10px;
+}
+
+#footerBox .f_sns ul li img{
+    width: 50px;
+    height:50px;    
+}
+
+#footerBox .f_copy{
+    width: 40%;
+    height:100%;
+    float: left;
+    line-height: 50px;
+}
+
+#footerBox .f_copy p {
+    font-size: 10px;
+    color: #f1f1f1;
+}
+
+#footerBox .f_address{
+    width: 30%;
+    height:100%;
+    float: left;
+    line-height: 50px;  
+}
+
+#footerBox .f_address address{
+    font-size: 10px;
+    color: #fff;
+}
