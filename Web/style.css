@@ -88,15 +88,26 @@ input, select {
 }
 /*reset end*/
 
+
+/*margin-top: 10px;
+margin-right: 20px;
+margin-bottom: 15px;
+margin-left: 5px;
+*/
+
+
 #wrap{
-    width: 100%;
+    width: 95%;
     height: 120%;
+    margin-top: 10px;
+    margin:0 auto;
 }
 
 #headerBox{
     width: 100%;
-    height: 50px;
-    background: #fc8365;
+    height: 70px;
+    border-radius: 10px;
+    background: #ffb291;
     text-align: center;
 }
 
@@ -107,160 +118,138 @@ input, select {
     float: left;
 }
 
-
-#headerBox .h_logo a{
-    font-size: 20px;
-    color: #fff;
+#headerBox .h_logo img{
+    margin: 15px;
 }
 
-
-#headerBox .h_logo a:hover{ /*hover 마우스 올렸을때 색깔 */
-    color: #8ec430;
-}
-
-#headerBox .h_search{
-    width: 40%;
-    height: 50%;
-    line-height: 50px;
-    float: left;
-}
-
-
-#headerBox .h_nav ul{
-    width: 100%;
-    height: 100%;
-}
-
-#headerBox .h_nav ul li{
-    display: inline;
-    width: 25%;
-    height: 100%;
-    float: left;
-}
-
-#headerBox .h_nav ul li:hover{
-    background-color: #bdbdbd;
-}
-
-#headerBox .h_nav ul li a{
-    color:#fff;
-}
-#headerBox .h_nav .h_subnav{
-    display: none;
-    width:150px;
-    height:100px;
-    background: #2a2a2a;
-    position:absolute;
-}
-
-#headerBox .h_nav .h_subnav li{
-    display: block;
-    float: none;
-    width:100%;
-    height: auto;
-    margin:0;
-}
-
-#headerBox .h_nav ul li.h_navBtn:hover .h_subnav{
-    display: block;
-}
-
-#headerBox .h_sns{
-    width: 30%;
-    height: 100%;
-    float: left;
-}
-
-#headerBox .h_sns ul{
-    width: 100%;
-    height: 100%;
-}
-
-#headerBox .h_sns ul li{
-    display: inline;
-    margin: 0 10px 0 10px;
-}
-
-#headerBox .h_sns ul li img{
-    width: 50px;
-    height: 50px;
-}
-
-#contentBox{
-    width: 100%;
-    height:700px;
-}
-
-#contentBox .c_article{
+#headerBox .h_searchbox{
     width: 70%;
-    height:100%;
-    float: left;
-    background: #f1f1f1;
-    text-align: center;
-    line-height: 700px;
-    font-size: 20px;
-    color: #2a2a2a;
-}
-
-#contentBox .c_aside{
-    width: 30%;
-    height:100%;
-    float: left;
-    background: #fdd;
-    text-align: center;
-    line-height: 700px;
-    font-size: 20px;
-    color: #2a2a2a;
-}
-
-#footerBox{
-    width: 100%;
-    height:50px;
-    background:#2a2a2a;
-    text-align: center;
-}
-
-#footerBox .f_sns{
-    width: 30%;
-    height:100%;
+    height: 100%;
     float: left;
 }
 
-#footerBox .f_sns ul{
-    width: 100%;
-    height:100%;
-}
-
-#footerBox .f_sns ul li{
-    display: inline;
-    margin: 0 10px 0 10px;
-}
-
-#footerBox .f_sns ul li img{
-    width: 50px;
-    height:50px;    
-}
-
-#footerBox .f_copy{
+#headerBox .h_searchbox .h_search{
     width: 40%;
-    height:100%;
+    height: 30%;
     float: left;
-    line-height: 50px;
+    margin-top: 15px;
 }
 
-#footerBox .f_copy p {
-    font-size: 10px;
-    color: #f1f1f1;
-}
 
-#footerBox .f_address{
-    width: 30%;
-    height:100%;
+#headerBox .h_searchbox .h_submitbtn{
     float: left;
-    line-height: 50px;  
+    background-image: url("./article/검색버튼.gif");
+    width: 45px;
+    height:32px;
+    border: 0px;
+    margin-left: 2px;
+    margin-top: 13px;
 }
 
-#footerBox .f_address address{
-    font-size: 10px;
-    color: #fff;
+#middlebox{
+    width: 100%;
+    height: 315px;
+    padding-top: 24px;
+}
+
+#middlebox .m_login{
+    width: 216px;
+    height: 280px;
+    background-image: url("./article/로그인창.png");
+    float: left;
+    text-align: center;
+}
+
+#middlebox .m_login  .m_log_input {
+    width: 100%;
+    height: 65px;
+    padding-top: 30px;
+}
+
+#middlebox .m_login  .m_log_input h3{
+    display: inline;
+}
+
+#middlebox .m_login  .m_log_input input{
+    width:75%;
+}
+
+#middlebox .m_login p input {
+    border-radius: 10px;
+    width: 90%;
+    height: 80px;
+    background: #ffb291;
+}
+
+#middlebox .m_log_joinus{
+    margin-top: 10px;
+}
+
+#middlebox .m_log_lost{
+    margin-top: 10px;
+}
+
+#middlebox .m_imgbox{
+    width: 72%;
+    height: 280px;
+    margin-left: 15px;
+    margin-right: 15px;
+    float: left;
+    background-color: #4881ff;
+    border-radius: 10px;
+}
+
+#middlebox .m_donation{
+    width: 217px;
+    height: 215px;
+    margin-top: 20px;
+    background-image: url("./article/기부.png");
+    text-align: center;
+    float: left;
+}
+
+
+#asidebox{
+    width:216px;
+    height:400px;
+    float: left;
+    margin-right: 13px;
+}
+
+#asidebox .a_catagori{
+    width: 100%;
+    height:30px;
+    background:#fff;
+    border-radius: 10px;
+    border:1px solid #000;
+    position:relative;
+}
+
+#asidebox .a_catagori span{
+    width:80%;
+    height:100%;
+    float:left;
+    line-height: 30px;
+}
+
+#asidebox .a_catagori img {
+    width:20%;
+    height:100%;
+    float:left;
+}
+#asidebox .a_catagori .a_cat_ul{
+    display:none;
+    width:100%;
+    height:100px;
+}
+#asidebox .a_catagori .a_cat_ul li{
+    display:block;
+    text-align: center;
+}
+
+#contentBox {
+    width: 72%;
+    float: left;
+    height:400px;
+    overflow: auto;
 }
