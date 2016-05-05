@@ -1,0 +1,115 @@
+<!doctype html>
+<HTML>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset = utf-8"/>
+	<meta neme = "title" content="gamsung_market"/>
+	<meta name = "keyword" content = "market"/>
+	<meta name = "auther" content = "DLP"/>
+	<meta name="description" content "gamsung_market"/>
+	
+	<title>gamsung</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<script type="text/javascript" src="./jquery-1.12.1.min.js"></script>
+
+</head>
+
+<body>
+<section id="wrap">
+	<header id="headerBox">
+		<h1 class="h_logo"><a href="gamsung.html"><img src="./article/logo_03.gif"/></a></h1>
+
+		<form method="get" class="h_searchbox">
+			<input type="text" name="search_box" class="h_search">
+			<input type="submit" class="h_submitbtn" value=" "></input>
+		</form>
+		<!-- css-->
+
+	</header>
+
+	<header id="middlebox">
+		<form name="login" method="post" action="" class="m_login">
+			<div class="m_log_input">
+				<h3>ID</h3>
+				<input type="text" name="memberName" maxlength="12">
+				<h3>PW</h3>
+				<input type="password" name="memberPassword" maxlength="12">
+			</div>
+			<p><input type="submit" value="로그인"></p>
+			<input type="button" value="회원가입" class="m_log_joinus">
+			<input type="button" value="ID/PW찾기" class="m_log_lost">
+		</form>
+
+
+		<article class="m_imgbox">
+		</article>
+
+		<article class="m_donation">
+		</article>	
+	</header>
+
+	<aside id="asidebox">
+		
+
+		<nav class="a_catagori">
+			<span>카테고리</span>
+			<img src="adf.jpg" class="a_catagori_img">		
+			<ul class="a_cat_ul">
+				<li><a href="#">상의</a></li>
+				<li><a href="#">하의</a></li>
+				<li><a href="#">기타</a></li>
+			</ul>
+		</nav>
+
+		<script type="text/javascript">
+			(function($){
+
+				$(document).ready(function(){
+
+					var ca_btn = $('.a_catagori_img');
+					var ca_btn_src = ca_btn.attr('src');
+
+					var ca_ul = $('.a_cat_ul');
+
+					ca_btn.on('click',function(){
+
+						var ca_btn_src = ca_btn.attr('src');
+						var ca_btn_src_off = "adfsd.jpg";
+						var ca_btn_src_on = "adf.jpg";
+						
+						ca_ul.slideToggle();
+						if( ca_btn_src == ca_btn_src_on){
+							ca_btn_src.attr('src',ca_btn_src_off);
+						}
+						else{
+							ca_btn_src.attr('src',ca_btn_src_on);	
+						}
+
+					});
+
+				});
+
+
+			})(jQuery)
+
+		</script>
+		
+	</aside>
+
+	<section id="contentBox">	
+		<div>
+			<img src="./article/sample.png"/>
+		</div>
+	</section>
+
+		
+	<nav id="side_nav">
+		<p>내가본상품</p>
+		<img src="./article/cloud.png"/>
+		<img src="./article/facebook.png"/>
+		<img src="./article/twitter.png"/>
+		<img src="./article/github.png"/>
+	</nav>
+		
+</section>
+</body>
+</HTML>
