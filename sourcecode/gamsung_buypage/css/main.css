@@ -1,5 +1,27 @@
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video
+ {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -99,17 +121,255 @@ textarea {
 
 
 
+#wrap{
+    width: 1174px;
+    height: 120%;
+    margin:0 auto;
+    padding-top: 10px;
+    min-width: 1158px;
+}
 
 
+#container{
+    width:100%;
+    height:815px;
+    margin-top: 15px;
+}
 
 
+/*header start===============================================================*/
+
+#headerBox{
+    width: 100%;
+    height: 70px;
+    border-radius: 10px;
+    background: #ffb291;
+    text-align: center;
+}
+
+#headerBox .h_logo{
+    width: 30%;
+    height: 100%;
+    line-height: 50px;
+    float: left;
+
+}
+
+#headerBox .h_logo img{
+    margin-top: 15px;
+}
+
+#headerBox .h_logo a{
+	margin-top: 15px;
+}
+
+#headerBox .h_searchbox{
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+#headerBox .h_searchbox .h_search{
+    width: 50%;
+    height: 30%;
+    float: left;
+    margin-top: 15px;
+}
 
 
+#headerBox .h_searchbox .h_submitbtn{
+    float: left;
+    background-image: url("../img/검색버튼.gif");
+    width: 45px;
+    height:32px;
+    border: 0px;
+    margin-left: 2px;
+    margin-top: 13px;
+}
+
+/*headerbox end===================================================================*/
 
 
+#asidebox{
+    width:216px;
+    height:100%;
+    float: left;
+    margin-right: 13px;
+}
+
+#asidebox .m_login{
+    width: 216px;
+    height: 280px;
+    background-image: url("../img/로그인창.png");
+    float: left;
+    text-align: center;
+}
+
+#asidebox .m_login  .m_log_input {
+    width: 100%;
+    height: 65px;
+    padding-top: 30px;
+}
+
+#asidebox .m_login  .m_log_input h3{
+    display: inline;
+}
+
+#asidebox .m_login  .m_log_input input{
+    width:75%;
+}
+
+#asidebox .m_login  .m_log_input .m_log_input_id{
+    margin-left: 8px;
+}
 
 
+#asidebox .m_log_joinus{
+    margin-top: 20px;
+}
 
+#asidebox .m_log_lost{
+    margin-top: 20px;
+}
+
+
+#asidebox .m_login p input {
+    margin-top:20px;
+    border-radius: 10px;
+    width: 192px;
+    height: 82px;
+    background-image: url("../img/loginButton.png");
+    border-radius: 25px;
+    border: 0;
+    outline: 0;
+}
+
+#asidebox .a_catagori{
+    margin-top: 290px;
+    width: 100%;
+    height:auto;
+    background:#fff;
+    border-radius: 10px;
+    border:1px solid #000;
+    position:relative;
+}
+#asidebox .a_catagori div{
+    width:100%;
+    height:30px;
+}
+#asidebox .a_catagori span{
+    width:80%;
+    height:100%;
+    float:left;
+    line-height: 30px;
+}
+
+#asidebox .a_catagori img {
+    width:20%;
+    height:100%;
+    float:left;
+}
+
+#asidebox .a_catagori .a_cat_ul{
+    display:none;
+    width:100%;
+    height:100px;
+}
+
+#asidebox .a_catagori .a_cat_ul li{
+    display:block;
+    text-align: center;
+}
+
+
+#asidebox .a_center{
+    width: 100%;
+    height:auto;
+    margin-top: 10px;
+    background:#fff;
+    border-radius: 10px;
+    border:1px solid #000;
+    position:relative;
+}
+
+#asidebox .a_center div{
+    width:100%;
+    height:30px;
+}
+
+#asidebox .a_center span{
+    width:80%;
+    height:100%;
+    float:left;
+    line-height: 30px;
+}
+
+#asidebox .a_center img {
+    width:20%;
+    height:100%;
+    float:left;
+}
+
+#asidebox .a_center .a_center_ul{
+    display:none;
+    width:100%;
+    height:100px;
+}
+
+#asidebox .a_center .a_center_ul li{
+    display:block;
+    text-align: center;
+}
+
+/*contentbox start============================================================================*/
+
+#contentBox {
+    width: 600.38px;
+    height:815px;
+    padding: 10px 10px 0px 10px;
+    overflow: auto;
+    float: left;
+}
+
+
+/*contentbox end===========================================================================*/
+
+/*rsidebox start==============================================================================*/
+
+#rside_box{
+    width: 199px;
+    height: 100%;
+    float: left;
+    
+}
+
+
+#rside_box .rs_donation{
+    width: 216px;
+    height: 215px;
+    text-align: center;
+    float: left;
+}
+
+#rside_box .rs_today{
+    width: 199px;
+    height:
+}
+
+/*side box end====================================================================================*/
+
+/*footer box start===================================================================================*/
+#footerBox{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+#footerBox p{
+    color: #aaaaaa;
+
+}
+/*footer box end=============================================================================*/
 
 /* ==========================================================================
    Helper classes
