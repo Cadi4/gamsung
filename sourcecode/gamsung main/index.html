@@ -14,6 +14,7 @@
 
         <link rel="stylesheet" href="./css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script type="text/javascript" src="./js/vendor/jquery-1.12.1.min.js"></script>
     </head>
 
     <body>
@@ -21,7 +22,7 @@
 
 		<!--start header ===========================================================-->
 		<header id="headerBox">
-			<h1 class="h_logo"><a href="gamsung.html"> <img src="./img/logo_03.gif"/></a></h1>
+			<h1 class="h_logo"><a href="./index.html"> <img src="./img/logo_03.gif"/></a></h1>
 
 			<form method="get" class="h_searchbox">
 			<input type="text" name="search_box" class="h_search">
@@ -29,21 +30,22 @@
 			</form>
 		</header>
 		<!--end header ===========================================================-->
-
+	
 
 		<!--start middlebox ========================================================-->
 		<header id="middlebox">
 			<form name="login" method="post" action="" class="m_login">
 				<div class="m_log_input">
-					<h3>ID</h3>
+					<h3 class="m_log_input_id">ID</h3>
 					<input type="text" name="memberName" maxlength="12">
 					<h3>PW</h3>
 					<input type="password" name="memberPassword" maxlength="12">
 				</div>
 
+				
+				<p><input type="submit" value=" " class = "m_log_login"></p>
 				<input type="button" value="회원가입" class="m_log_joinus">
 				<input type="button" value="ID/PW찾기" class="m_log_lost">
-				<p><input type="submit" value=" " class = "m_log_login"></p>
 			</form>
 
 
@@ -58,10 +60,13 @@
 
 
 		<!--start asidbox ===========================================================-->
+		<section id="container">
 		<aside id="asidebox">
 			<nav class="a_catagori">
+				<div>
 				<span>카테고리</span>
-				<img src="adf.jpg" class="a_catagori_img">
+				<img src="./img/categorybutton_4.png" class="a_catagori_img" data="off">
+				</div>
 				<ul class="a_cat_ul">
 					<li><a href="#">상의</a></li>
 					<li><a href="#">하의</a></li>
@@ -70,8 +75,10 @@
 			</nav>
 
 			<nav class = "a_center">
+				<div>
 				<span> 감선센터</span>
-				<img src="adf.jpg" class="a_center_img">
+				<img src="./img/categorybutton_4.png" class="a_center_img" data="off">
+				</div>
 				<ul class="a_center_ul">
 					<li><a href="#">상의</a></li>
 					<li><a href="#">하의</a></li>
@@ -79,6 +86,67 @@
 				</ul>
 			</nav>
 		</aside>
+
+	<script type="text/javascript">
+		(function($){
+			$(document).ready(function(){
+				var ca_btn = $('.a_catagori_img');
+				var ca_ul = $('.a_cat_ul');
+				
+				ca_btn.on('click',function(){
+					
+					var ca_btn_data = ca_btn.attr('data');
+					var ca_btn_src = ca_btn.attr('src');
+					var ca_btn_src_off = "./img/categorybutton_4.png";
+					var ca_btn_src_on = "./img/categorybutton_reverse.png";	
+
+					if( ca_btn_data == 'off'){
+						
+						ca_btn.attr('data','on');
+						ca_ul.slideDown();
+						ca_btn.attr('src',ca_btn_src_on);
+
+					}
+					else{
+
+						ca_btn.attr('data','off');
+						ca_ul.slideUp();
+						ca_btn.attr('src',ca_btn_src_off);
+					}
+
+				});
+
+			});
+			$(document).ready(function(){
+				var ca_btn1 = $('.a_center_img');
+				var ca_ul1 = $('.a_center_ul');
+				
+				ca_btn1.on('click',function(){
+					
+					var ca_btn_data1 = ca_btn1.attr('data');
+					var ca_btn_src1 = ca_btn1.attr('src');
+					var ca_btn_src_off1 = "./img/categorybutton_4.png";
+					var ca_btn_src_on1 = "./img/categorybutton_reverse.png";	
+
+					if( ca_btn_data1 == 'off'){
+						
+						ca_btn1.attr('data','on');
+						ca_ul1.slideDown();
+						ca_btn1.attr('src',ca_btn_src_on1);
+
+					}
+					else{
+
+						ca_btn1.attr('data','off');
+						ca_ul1.slideUp();
+						ca_btn1.attr('src',ca_btn_src_off1);
+					}
+
+				});
+
+			});
+		})(jQuery)
+	</script>
 		<!--end aside box =======================================================-->
 
 
@@ -100,14 +168,16 @@
 			<img src="./img/오늘본상품.png"/> <!-- width 199 px로 줄이기-->
 		</nav>
          <!--end side nav============================================-->
+        </section>
 
-
+         <!--footer start============================================-->
          <footer id="footerBox">
-         	<p>주소 잡다한것을 넣어야겟죠 근데 레이아웃에는 없죠 걍 쓰는거죠 좋죠 아이 좋아라</p>
-         </footer>
-
+         	<hr/>
+         	<p> 문의 사항: 010-8949-2494</p>
+        </footer>
+         <!--footer end================================================-->
 		</section>
-
+		
 
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
